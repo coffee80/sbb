@@ -57,11 +57,6 @@ export class RoomService {
    */
   private generateMockData() {
     const initialRooms: Room[] = [
-      { id: 1, name: '101', description: 'Singola Standard - Vista Cortile', basePrice: 75.00 },
-      { id: 2, name: '102', description: 'Doppia Superior - Vista Mare', basePrice: 120.00 },
-      { id: 3, name: '201', description: 'Junior Suite - Balcone Privato', basePrice: 180.00 },
-      { id: 4, name: '202', description: 'Matrimoniale Economy', basePrice: 95.00 },
-      { id: 5, name: 'Suite Presidential', description: 'Ultimo piano, Idromassaggio e Open Bar', basePrice: 450.00 }
     ];
     
     this._rooms.set(initialRooms);

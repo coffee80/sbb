@@ -1,15 +1,11 @@
 import { Component, computed, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { CityInput } from "./city-input/city-input";
 import { City } from './model/city';
-import { GuestPreview } from "./guest-preview/guest-preview";
-import { Guest } from './model/hotel.entities';
-import { GuestSearch } from "./guest-search/guest-search";
-import { RefundCalculator } from "./refund-calculator/refund-calculator";
+import { TopMenu } from "./top-menu/top-menu";
+import { RouterOutlet, RouterLinkWithHref, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RefundCalculator],
+  imports: [TopMenu, RouterOutlet, RouterLinkWithHref, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

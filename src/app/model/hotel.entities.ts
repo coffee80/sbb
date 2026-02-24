@@ -13,13 +13,32 @@ export interface Room {
     name:string;
     description:string;
     basePrice:number;
+    hotelId:number;
 }
 
 export interface Booking{
     id?:number;
     guestId:number;
     roomId:number;
+    guest:Guest;
+    room:Room;
     from:Date;
     to:Date;
     notes:string;
+}
+
+export interface Hotel{
+    id:number;
+    name:string;
+    address:string;
+    city:string;
+}
+
+export interface User{
+    id:number;
+    email:string;
+    firstName:string;
+    lastName:string;
+    role:string;
+    hotel:Hotel;
 }
