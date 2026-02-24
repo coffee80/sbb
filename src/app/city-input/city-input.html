@@ -10,7 +10,7 @@
             [readonly]="selected()"
             name="key" 
             (change)="findCity()"
-            /> 
+            /> {{loading() ?"LOADING..." : ""}}
 
             @if(!selected() && results().length>0)
             {
