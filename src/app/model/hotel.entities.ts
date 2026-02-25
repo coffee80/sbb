@@ -25,6 +25,8 @@ export interface Booking{
     from:Date;
     to:Date;
     notes:string;
+    status:string;
+    price:number;
 }
 
 export interface Hotel{

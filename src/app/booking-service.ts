@@ -20,6 +20,11 @@ export class BookingService {
         
         return this.http.get<Booking[]>(url);
     }
+
+    public doCheckIn(id:number):Observable<Booking>{
+        let url = this.apiURL+"/"+id+"/executed";
+        return this.http.patch<Booking>(url, null);   
+    }
     
 
 }
